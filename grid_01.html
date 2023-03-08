@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Page</title>
+
+    <style>
+        * {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body {
+            margin: auto;
+            width: 80%;
+            height: 100vh;
+            background-color: rgb(31, 31, 31);
+        }
+
+        .ctn {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: rebeccapurple;
+        }
+
+        .box {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(243, 243, 243);
+            outline: 2px solid black;
+        }
+
+        .a {
+            display: grid;
+            grid-template-rows: .5fr 3.5fr .2fr .8fr;
+        }
+
+        .coco {
+            outline: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .coco3 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .lemo {
+            border: 1px solid black;
+        }
+
+        .dot {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .coco4 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .lemo1 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            outline: 1px solid black;
+        }
+
+        .fav {
+            font-weight: 600;
+            outline: 1px solid black;
+        }
+
+        .b {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 2fr;
+        }
+
+        .item {
+            outline: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .ele {
+            outline: 1px solid black;
+        }
+
+        .ele1,
+        .ele2 {
+            grid-row: 1 / span 2;
+            padding-left: .6rem;
+        }
+
+        .ele3,
+        .ele4 {
+            font-weight: 600;
+        }
+
+        .ele5 {
+            grid-column: 3 / span 5;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .atom {
+            outline: 1px solid black;
+        }
+
+        .proton {
+            outline: 1px solid black;
+        }
+
+        .proton1 {
+            padding-left: .6rem;
+        }
+
+        .nuclei {
+            outline: 1px solid black;
+        }
+
+        .nuclei5 {
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ctn">
+
+        <div class="box a">
+
+            <div class="coco coco1">
+                <div class="lemo lemo1 center">_lomoa_</div>
+                <div class="lemo lemo2 center">About</div>
+                <div class="lemo lemo3 center">Pricing</div>
+                <div class="lemo lemo4 center">Mentors</div>
+            </div>
+
+            <div class="coco coco2">
+
+            </div>
+
+            <div class="coco coco3">
+                <div class="dot">o</div>
+                <div class="dot">o</div>
+                <div class="dot">o</div>
+                <div class="dot">o</div>
+                <div class="dot">o</div>
+                <div class="dot">o</div>
+            </div>
+
+            <div class="coco coco4">
+                <div class="fav fav1 center">Google</div>
+                <div class="fav fav2 center">facebook</div>
+            </div>
+
+        </div>
+
+        <div class="box b">
+
+            <div class="item item1">
+                <div class="ele ele1"></div>
+
+                <div class="ele ele2 center">Learn how to start creating a meaningful stories</div>
+
+                <div class="ele ele3 center">Sign in</div>
+
+                <div class="ele ele4 center">Get started</div>
+
+                <div class="ele ele5 ">
+                    <div class="dot">o</div>
+                    <div class="dot">o</div>
+                    <div class="dot">o</div>
+                </div>
+
+            </div>
+
+            <div class="item item2">
+                <div class="atom atom1"></div>
+                <div class="atom atom2"></div>
+                <div class="atom atom3"></div>
+                <div class="atom atom4"></div>
+            </div>
+
+            <div class="item item3">
+
+                <div class="proton proton1 center">Get rid of the "junk-text", we'll show you how</div>
+
+                <div class="proton proton2"></div>
+                <div class="proton proton3"></div>
+                <div class="proton proton4"></div>
+
+            </div>
+
+            <div class="item item4">
+                <div class="nuclei nuclei1"></div>
+                <div class="nuclei nuclei2"></div>
+                <div class="nuclei nuclei3"></div>
+                <div class="nuclei nuclei4">
+                </div>
+                <div class="nuclei nuclei5"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
